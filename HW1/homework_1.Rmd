@@ -1,0 +1,21 @@
+---
+title: "homerwork 1"
+author: "Emilio Otero"
+date: "2024-11-11"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Presentation
+
+My name is Emilio I am a third year student of the bachelors program of math 
+and statistics.
+
+## Previous expierience
+
+Little to none previous experience. Except from what has been though in the 
+courses I have taken.
