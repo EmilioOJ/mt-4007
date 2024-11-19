@@ -70,14 +70,9 @@ steep price increase per square meter for apartments very close to the
 Ocean. The data does not seem to support this theory at a first glance
 from the the scatterplot.
 
-    booli_sold %>%
-      filter(!is.na(location.distance.ocean) & !is.na(ppsqm)) %>%
-      ggplot() + 
-        geom_point(mapping = aes(x = location.distance.ocean, y = ppsqm))
+![](figures/unnamed-chunk-2-1.png)
 
-![](homework_2_files/figure-markdown_strict/unnamed-chunk-2-1.png)
-
-# Röster per kommun
+# Votes per municipality
 
     # Task 1: Number of valid votes in stockholm municipalities
     r_per_kommun %>% 
@@ -150,20 +145,7 @@ suffered a stroke or not. The graph suggests that having been married
 increases the chance of suffering a stroke and this would seem slightly
 more prominent for women then men.
 
-    stroke_data %>%
-      select(stroke, gender, ever_married) %>%
-      filter(gender != "Other") %>%
-      mutate(stroke = ifelse(stroke != 0, 1, 0)) %>%  
-      group_by(ever_married, gender, stroke) %>%  
-      summarise(count = n()) %>%  
-      ggplot(aes(x = interaction(ever_married, gender), y = count, fill = gender)) +  
-      geom_bar(stat = "identity", position = "dodge") +  
-      labs(title = "Frequency of Stroke by if ever married and Gender",
-           x = "Ever married and Gender",
-           y = "Frequency of Stroke",
-           fill = "Gender") 
-
     ## `summarise()` has grouped output by 'ever_married', 'gender'. You can override
     ## using the `.groups` argument.
 
-![](homework_2_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![](figures/unnamed-chunk-4-1.png)
