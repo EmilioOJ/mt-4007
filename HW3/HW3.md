@@ -329,7 +329,7 @@ Combining the observed information from the above questions we now ask
 if the 4 to 1 ratio for hypertension holds true for all age groups as
 shown above. Figure 5 indicates that the relative effect of hypertension
 is stronger the younger you are. Hypertension increases the stroke
-chance with about 0.5 chance across all ages. As an individual ages the
+chance with about 0.05 chance across all ages. As an individual ages the
 effect of hypertension increases very slightly but other effect seem to
 come in to play.
 
@@ -355,9 +355,9 @@ come in to play.
 
 <figure>
 <img src="HW3_files/figure-markdown_strict/unnamed-chunk-4-1.png"
-alt="Barplot by age intervals of 20 showing the relative frequency of hypertension" />
-<figcaption aria-hidden="true">Barplot by age intervals of 20 showing
-the relative frequency of hypertension</figcaption>
+alt="Barplot of the relative frequency of hypertension by age group and hypertension" />
+<figcaption aria-hidden="true">Barplot of the relative frequency of
+hypertension by age group and hypertension</figcaption>
 </figure>
 
 ## Cleaning datat
