@@ -81,58 +81,6 @@ diagonals.
 
 ## Highest count species
 
-    summary(artportalen)
-
-    ##        Id            Taxonsorteringsordning  Rödlistade       
-    ##  Min.   : 97785066   Min.   :53905          Length:21916      
-    ##  1st Qu.: 98957872   1st Qu.:54222          Class :character  
-    ##  Median : 99796691   Median :54944          Mode  :character  
-    ##  Mean   : 99812517   Mean   :54752                            
-    ##  3rd Qu.:100764332   3rd Qu.:55213                            
-    ##  Max.   :101507783   Max.   :55488                            
-    ##    Artnamn          Vetenskapligt.namn    Auktor             Antal          
-    ##  Length:21916       Length:21916       Length:21916       Length:21916      
-    ##  Class :character   Class :character   Class :character   Class :character  
-    ##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-    ##                                                                             
-    ##                                                                             
-    ##                                                                             
-    ##  Ålder.stadium          Kön             Aktivitet          Lokalnamn        
-    ##  Length:21916       Length:21916       Length:21916       Length:21916      
-    ##  Class :character   Class :character   Class :character   Class :character  
-    ##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-    ##                                                                             
-    ##                                                                             
-    ##                                                                             
-    ##   Ostkoordinat     Nordkoordinat      Noggrannhet       Diffusion
-    ##  Min.   :1622830   Min.   :6579964   Min.   :   0.0   Min.   :0  
-    ##  1st Qu.:1626851   1st Qu.:6580712   1st Qu.:  94.0   1st Qu.:0  
-    ##  Median :1630050   Median :6581857   Median : 187.0   Median :0  
-    ##  Mean   :1629865   Mean   :6583355   Mean   : 288.5   Mean   :0  
-    ##  3rd Qu.:1633107   3rd Qu.:6585409   3rd Qu.: 250.0   3rd Qu.:0  
-    ##  Max.   :1635000   Max.   :6590025   Max.   :4679.0   Max.   :0  
-    ##      Län               Kommun            Provins           Församling       
-    ##  Length:21916       Length:21916       Length:21916       Length:21916      
-    ##  Class :character   Class :character   Class :character   Class :character  
-    ##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-    ##                                                                             
-    ##                                                                             
-    ##                                                                             
-    ##   Startdatum          Starttid          Slutdatum           Sluttid         
-    ##  Length:21916       Length:21916       Length:21916       Length:21916      
-    ##  Class :character   Class :character   Class :character   Class :character  
-    ##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-    ##                                                                             
-    ##                                                                             
-    ##                                                                             
-    ##   Kommentar            Biotop           Rapportör         Observatörer      
-    ##  Length:21916       Length:21916       Length:21916       Length:21916      
-    ##  Class :character   Class :character   Class :character   Class :character  
-    ##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-    ##                                                                             
-    ##                                                                             
-    ## 
-
     artportalen <- artportalen %>% 
       mutate(Antal = as.numeric(Antal))
 
