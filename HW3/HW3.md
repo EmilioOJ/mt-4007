@@ -20,8 +20,13 @@ Iris-setosa.
 
     grid.arrange(p1, p2, ncol = 2)
 
-![Scatter plots sepal vs
-petal](HW3_files/figure-markdown_strict/asd-1.png) \### Boxplots
+<figure>
+<img src="HW3_files/figure-markdown_strict/asd-1.png"
+alt="Scatter plots sepal vs petal" />
+<figcaption aria-hidden="true">Scatter plots sepal vs petal</figcaption>
+</figure>
+
+### Boxplots
 
 The boxplots in Fig 2 shows us the spread of the data for each species
 and attribute (sepal-width, -length, petal-width, -length). We se that
@@ -52,9 +57,14 @@ a hierarchical order from smallest to largest Iris-setosa, -versicolor,
 
     grid.arrange(p1, p2, p3, p4, nrow = 2, ncol = 2)
 
-![boxplots for Iris species and
-variable](HW3_files/figure-markdown_strict/boxplots-Iris-1.png) \###
-Pairs plot
+<figure>
+<img src="HW3_files/figure-markdown_strict/boxplots-Iris-1.png"
+alt="boxplots for Iris species and variable" />
+<figcaption aria-hidden="true">boxplots for Iris species and
+variable</figcaption>
+</figure>
+
+### Pairs plot
 
 The pairs plot gives us an overview how the different variables of the
 data are related. We observe the same plots as the ones produced on
